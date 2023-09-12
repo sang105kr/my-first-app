@@ -1,8 +1,7 @@
 import { StyleSheet,Image } from "react-native";
 
-function ImageViewer(props){
-  console.log(props);
-  return <Image source={props.aa} style={styles.image}></Image>;
+function ImageViewer({ placeholderImageSource }) {
+  return <Image source={placeholderImageSource} style={styles.image}></Image>;
 }
 
 const styles = StyleSheet.create({
